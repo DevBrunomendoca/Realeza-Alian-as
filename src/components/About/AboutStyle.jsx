@@ -5,7 +5,7 @@ export const ContainerAbout = styled.section`
 display: flex;
 align-items: center;
 width: 70%;
-margin: 1rem 15% 5rem;
+margin: 5rem 15% 13rem;
 gap: 2rem;
 
 

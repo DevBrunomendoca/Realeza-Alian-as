@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #FDEFEC;
 }
 
 

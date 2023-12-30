@@ -8,7 +8,7 @@ width: 25%;
 margin-top: -5rem;
 padding: 1.5rem;
 border-radius: 10px;
-background-color: #fdefec;
+background-color: #fff;
 z-index: 1;
 
 h4{ 

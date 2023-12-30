@@ -30,10 +30,10 @@ export default function Main() {
       >
         <Container>
           <ContainerContent>
-            <Title textTitle="BEM-VINDO A REALEZA JOIAS"/>
+            <Title textTitle="BEM-VINDO A REALEZA JOIAS" />
             <SecondTitle textTitle="Alianças de alta qualidade que você sempre mereceu" />
             <Paragraph textParagraph="Descubra o brilho eterno das alianças de ouro. Aprecie a elegância e o requinte de peças cuidadosamente criadas para simbolizar o amor e a união." />
-            <Button />
+            <Button textButton="SABER MAIS!"/>
           </ContainerContent>
         </Container>
         {data.map((item) => (
@@ -45,7 +45,6 @@ export default function Main() {
         ))}
       </Swiper>
       <ContainerCards>
-
         <CardMain
           image="/icon-pag.png"
           title="10% de Desconto"
@@ -57,7 +56,7 @@ export default function Main() {
         <CardMain
           image="/icon-qualidade.png"
           title="Garantia Vitalícia"
-          subtitle="Aseguramos o teor do Ouro 18K" />
+          subtitle="Aseguramos o teor do Ouro 18K." />
       </ContainerCards>
     </MainStyle>
   )

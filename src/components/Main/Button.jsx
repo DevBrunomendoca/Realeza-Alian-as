@@ -1,7 +1,7 @@
 import { ButtonStyle }from "./ButtonStyle"
 
-export default function Button() {
+export default function Button({textButton}) {
   return(
-    <ButtonStyle>Saber Mais!</ButtonStyle>
+    <ButtonStyle>{textButton}</ButtonStyle>
   ) 
 }
