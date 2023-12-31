@@ -3,6 +3,7 @@ import { PargraphSecondStyle } from "../ParagraphSecondStyle"
 import SecondTitle from "../SecondTitle"
 import Title from "../Title"
 import CardNewAlliance from "./CardNewAlliance"
+
 import { SectionNewAlliance, ContentNewAlliance, ContainerCards, BannerNewAlliance } from "./NewAllianceStyle"
 import Separator from "./Separtor"
 

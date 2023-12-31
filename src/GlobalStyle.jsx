@@ -17,4 +17,7 @@ body {
 }
 
 
+.swiper-button-prev, .swiper-button-next{
+  color: #C3A59C !important;
+}
 `

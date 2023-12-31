@@ -1,7 +1,8 @@
+import CardProduct from "./CardProduct"
 import Paragraph from "../Paragraph"
 import SecondTitle from "../SecondTitle"
-import { ContainerAlliances, BannerAlliances, ContainerProducts, ContainerCard,  } from "./AlliancesStyle"
-import CardProduct from "./CardProduct"
+import { ContainerAlliances, BannerAlliances, ContainerProducts, ContainerCard, } from "./AlliancesStyle"
+
 
 export default function Alliances() {
   return (
@@ -13,7 +14,7 @@ export default function Alliances() {
       <ContainerProducts>
         <SecondTitle textTitle="Produtos em destaque" />
         <ContainerCard>
-          <CardProduct/>
+          <CardProduct />
         </ContainerCard>
       </ContainerProducts>
     </ContainerAlliances>

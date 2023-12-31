@@ -1,4 +1,3 @@
-import Paragraph from "../Paragraph"
 import ParagraphSecond from "../ParagraphSecond"
 import SecondTitle from "../SecondTitle"
 import { ContentCard } from "./CardNewAllianceStyle"
