@@ -1,4 +1,3 @@
-import CardProduct from "./CardProduct"
 import Paragraph from "../Paragraph"
 import SecondTitle from "../SecondTitle"
 import { ContainerAlliances, BannerAlliances, ContainerProducts, ContainerCard, } from "./AlliancesStyle"
