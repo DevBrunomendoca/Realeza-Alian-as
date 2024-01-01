@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ContainerAlliances = styled.section`
 margin: 7rem 0;
-
 `
 
 export const BannerAlliances = styled.div`
@@ -28,16 +27,19 @@ p {
 }
 `
 export const ContainerProducts = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3.5rem;
-  background-color: #fff;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 90%;
+padding: 5rem;
+  gap: 1rem;
+  background-color: #FDEFEC;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 80%;
-  margin: -5rem 10% 7rem;
-  padding: 3rem 10rem;
+  margin: -5rem 5%; 
   border-radius: 10px;
+
+
   h2{ 
   color: #928480;
   font-size: 3.5rem;
@@ -45,12 +47,19 @@ export const ContainerProducts = styled.div`
 `
 
 export const ContainerCard = styled.div`
+
+display: flex;
+align-items: center;
+width: 90%;
+padding: 5rem 10rem;
+
+/* 
 width: 90%;
 display: grid;
 grid-template-columns: repeat(3, 30%);
 grid-template-rows: auto;
-justify-content: center;
+justify-content: center; */
 
-gap: 4.5rem;
+gap: 2rem;
 //width: 100%;
 `
