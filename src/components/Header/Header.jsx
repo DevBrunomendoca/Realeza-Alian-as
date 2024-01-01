@@ -5,9 +5,9 @@ export default function Header() {
   return(
     <HeaderStyle>
       <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre</a>
-        <a href="#">Produtos</a>
+        <a href="#main">Inicio</a>
+        <a href="#about">Sobre</a>
+        <a href="#alliances">Produtos</a>
         <a href="#">Contato</a>
       </nav>
       <div style={{marginRight:"9rem"}}>

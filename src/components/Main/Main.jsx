@@ -17,7 +17,7 @@ export default function Main() {
     { id: "4", image: "banner-img-1.jpeg" }
   ]
   return (
-    <MainStyle>
+    <MainStyle id="main">
       <Swiper
         effect={'fade'}
         modules={[EffectFade]}

@@ -5,7 +5,7 @@ import { ContainerAbout, ContentAbout, BannerAbout} from "./AboutStyle"
 
 export default function About() {
   return(
-    <ContainerAbout>
+    <ContainerAbout id="about">
       <ContentAbout>
         <Title textTitle="QUEM SOMOS NÓS"/>
         <SecondTitle textTitle="Fundada a partir da inspiração artística e da moda elegante."/>

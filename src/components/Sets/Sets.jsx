@@ -8,7 +8,7 @@ import Title from "../Title"
 import { ContainerCardSets, ContainerSets } from "./SetsStyle"
 
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Navigation } from 'swiper/modules';
+import {Autoplay, Navigation } from 'swiper/modules';
 
 export default function Sets() {
   const data = [
@@ -42,10 +42,6 @@ export default function Sets() {
             disableOnInteraction: false,
           }}
           loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          Pagination={true}
           navigation={true}
           modules={[ Autoplay , Navigation ]}
           className="mySwiper"

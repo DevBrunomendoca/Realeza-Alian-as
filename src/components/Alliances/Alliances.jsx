@@ -6,7 +6,7 @@ import { ContainerAlliances, BannerAlliances, ContainerProducts, ContainerCard, 
 
 export default function Alliances() {
   return (
-    <ContainerAlliances>
+    <ContainerAlliances id="alliances">
       <BannerAlliances>
         <SecondTitle textTitle="ALIANÇAS DE CASAMENTO" />
         <Paragraph textParagraph="Alianças de Casamento são as representações do amor, fidelidade, compromisso e um elo entre duas pessoas que se amam." />
