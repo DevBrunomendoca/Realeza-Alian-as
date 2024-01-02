@@ -9,8 +9,32 @@ import {Autoplay, Navigation } from 'swiper/modules';
 import Price from "../Alliances/Price";
 import Button from "../Main/Button";
 import ImageCard from "../Alliances/ImageCard";
+import { useEffect, useState } from "react";
 
 export default function Engagement() {
+  const [slidePerview, setSlidePerView] = useState(4)
+
+  useEffect(() => {
+    function handleResize() {
+      window.innerWidth <= 450
+      ? setSlidePerView(1)
+      : window.innerWidth <= 799
+      ? setSlidePerView(2)
+      : window.innerWidth <= 999
+      ? setSlidePerView(3)
+      : window.innerWidth > 1000
+      ? setSlidePerView(4)
+      : setSlidePerView(4)
+    }
+
+    handleResize()
+    window.addEventListener("resize", handleResize)
+
+    return() => {
+      window.removeEventListener("resize", handleResize)
+    }
+
+  }, [])
 
   const data = [
     { id: '1', img: '/solitario-1.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.074,00', priceCard: '12xR$107,40' },
@@ -43,10 +67,10 @@ export default function Engagement() {
       </ContainerContent>
       <CardsEngagement>
         <Swiper
-          slidesPerView={4}
+          slidesPerView={slidePerview}
 
-          spaceBetween={30}
-          centeredSlides={true}
+          spaceBetween={10}
+          centeredSlides={false}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,

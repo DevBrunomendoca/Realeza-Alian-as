@@ -13,6 +13,11 @@ z-index: 1000;
 top:0;
 left: 0;
 background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(255, 249, 249, 0.5));
+@media (max-width: 500px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 `
 
 export const ContainerBanner = styled.div`
@@ -33,7 +38,6 @@ img {
   } 
 }
 `
-
 export const ContainerContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -49,12 +53,24 @@ h1 {
   font-weight: 700;
   color: #C3A59C;
 }
+
+@media (max-width:850px) {
+  left: 5%;
+  h2 {
+    text-align: start;
+  }
+}
 `
-
 export const ContainerCards = styled.div`
-
 display: flex;
 justify-content: center;
 align-items: center;
 gap: 3rem;
+
+@media (max-width: 850px) {
+  flex-direction: column;
+  margin-top: -5rem ;
+}
+
+
 `

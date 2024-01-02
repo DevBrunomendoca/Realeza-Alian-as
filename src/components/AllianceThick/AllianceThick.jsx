@@ -9,8 +9,32 @@ import Title from "../Title"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, Navigation } from 'swiper/modules';
 import { ContainerCardThick, SectionAllianceThick } from "./AllianceStickStyle"
+import { useEffect, useState } from "react"
 
 export default function AllianceThick() {
+
+  const [sliderPerview, setSliderPerview] = useState(1)
+
+  useEffect(() => {
+    function handleResize( ) {
+      window.innerWidth <= 700
+      ? setSliderPerview(1)
+      : window.innerWidth <= 1000
+      ? setSliderPerview(2)
+      : window.innerWidth >= 1001
+      ? setSliderPerview(3)
+      : setSliderPerview(1)
+    }
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+
+    return() => {
+      window.removeEventListener('resize', handleResize)
+
+    }
+  },[])
+
   const data = [
     { id: '1', img: '/aliancas-5-10mm-1.webp', title: 'Par de Alianças em Ouro 18K Reta com friso - 5mm', price: 'R$3.570,00', priceCard: '12xR$297,50' },
 
@@ -38,9 +62,9 @@ export default function AllianceThick() {
       <ParagraphSecond textParagraph="Alianças exclusivas, 5mm a 10mm, para celebrar cada momento especial da sua jornada juntos." />
       <ContainerCardThick>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={sliderPerview}
           spaceBetween={30}
-          centeredSlides={true}
+          centeredSlides={false}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,

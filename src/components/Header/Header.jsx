@@ -1,5 +1,5 @@
 import Logo from "../Logo"
-import { HeaderStyle } from "./HeaderStyle"
+import { HeaderStyle, SocialMedias } from "./HeaderStyle"
 
 export default function Header() {
   return(
@@ -10,15 +10,15 @@ export default function Header() {
         <a href="#alliances">Produtos</a>
         <a href="#">Contato</a>
       </nav>
-      <div style={{marginRight:"9rem"}}>
+      <div>
         <Logo/>
       </div>
-      <div style={{display:"flex", gap:"2rem"}}>
+      <SocialMedias>
         <img src="/icon-instagram.png" alt="" />
         <img src="/icon-facebook.png" alt="" />
         <img src="icon-whatsapp.png" alt="" />
 
-      </div>
+      </SocialMedias>
     </HeaderStyle>
     
   )

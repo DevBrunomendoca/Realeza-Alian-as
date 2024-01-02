@@ -25,15 +25,20 @@ p {
   text-align: center;
   margin-top: 1.5rem;
 }
+@media (max-width:850px) {
+  padding: 0rem 5rem;
+  h2{
+    text-align: center;
+  }
+  height: 350px;
+}
 `
-
 export const ContentTestimonial = styled.div`
 display: flex;
 align-items: center;
 width: 100%;
-padding: 5rem 15rem;
+padding: 5rem 10rem;
 margin-top: -10rem;
-
 
 .swiper-pagination-bullet{
   background-color: #D0A38D !important;
@@ -46,18 +51,22 @@ margin-top: -10rem;
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #523C36 !important;
 }
+
+@media (max-width:1250px) {
+  padding: 2rem 5rem;
+}
 `
 export const CardTestimonialStyle = styled.div`
-
+display: flex;
+align-items: center;
 width: 100%;
-height: 350px;
+height: 100%;
 background-color: #fff;
 border-radius: 20px;
 padding: 2rem;
 margin-bottom: 10rem;
-display: flex;
 flex-direction: column;
-justify-content: center;
+
 
 div {
   display: flex;
@@ -73,7 +82,8 @@ h2 {
 p {
   color: #928480;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1.8rem;
+  //height: 100px;
 }
 `

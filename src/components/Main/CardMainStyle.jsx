@@ -15,5 +15,20 @@ h4{
   font-size: 2.4rem;
   color: #928480;
   margin-top: 3rem;
+} 
+p {
+  height: 55px;
+}
+
+@media (max-width:850px) {
+  width: 50%;
+  margin-top: 0;
+} 
+@media (max-width:600px) {
+  width: 80%;
+  margin-top: 0;
+}
+@media (max-width: 500px) {
+  width: 95%;
 }
 `

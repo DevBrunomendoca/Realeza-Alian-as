@@ -1,13 +1,33 @@
 import Paragraph from "../Paragraph"
 import SecondTitle from "../SecondTitle"
 import Title from "../Title"
-import CardTestimonial from "./CardTestimonial"
+//import CardTestimonial from "./CardTestimonial"
 import { SectionTestimonial, BannerTestimonial, ContentTestimonial, CardTestimonialStyle } from "./TestimonialStyle"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import {Autoplay, Navigation ,Pagination } from 'swiper/modules';
+import { useEffect, useState } from "react"
 
 export default function Testimonial() {
+  const [sliderPerview, setSliderPerview] = useState(3)
+
+
+  useEffect(() =>{
+    function handleResize() {
+      window.innerWidth < 950
+      ? setSliderPerview(1)
+      : window.innerWidth <= 1250
+      ? setSliderPerview(2)
+      : setSliderPerview(3)
+    }
+    handleResize() 
+
+    window.addEventListener('resize', handleResize)
+
+    return() => {
+      window.addEventListener('resize', handleResize)
+    }
+  },[])
 
 
   const data = [
@@ -37,9 +57,9 @@ export default function Testimonial() {
       </BannerTestimonial>
       <ContentTestimonial>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={sliderPerview}
           spaceBetween={30}
-          centeredSlides={true}
+          centeredSlides={false}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,

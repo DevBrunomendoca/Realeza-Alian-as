@@ -6,6 +6,7 @@ margin: 5rem 15%;
 display: flex;
 align-items: center;
 justify-content: space-between;
+gap: 1rem;
 padding: 1rem 6rem;
 background-color: #fff;
 border-radius: 15px;
@@ -24,5 +25,26 @@ nav a {
 }
 nav a:hover {
 color: #D0A38D;
+}
+
+@media (max-width:1250px ) {
+  width: 94%;
+margin: 5rem 3%;
+}
+@media (max-width:850px ) {
+  justify-content: center;
+  nav {
+    display: none;
+  }
+}
+`
+
+export const SocialMedias = styled.div`
+
+display: flex;
+gap: 2rem;
+@media (max-width:850px ) {
+  display: none;
+  
 }
 `

@@ -25,6 +25,14 @@ p {
   text-align: center;
   font-size: 2rem;
 }
+@media (max-width:800px) {
+  height: 350px;
+  padding: 0 5rem;
+h2 {
+  text-align: center;
+}
+
+}
 `
 export const ContainerProducts = styled.div`
 
@@ -32,7 +40,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 90%;
-padding: 5rem;
+padding: 5rem 0;
   gap: 1rem;
   background-color: #F8F2F0;//#F8F2F0 #FDEFEC #C3A59C #928480
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -41,7 +49,7 @@ padding: 5rem;
 
 
   h2{ 
-  color: #F8F2F0;
+  color: #928480;
   font-size: 3.5rem;
 }
 `
@@ -62,4 +70,8 @@ justify-content: center; */
 
 gap: 2rem;
 //width: 100%;
+
+@media (max-width:600px) {
+  padding: 2rem 0;
+}
 `

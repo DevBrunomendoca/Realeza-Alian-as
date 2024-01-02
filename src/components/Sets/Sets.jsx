@@ -9,8 +9,32 @@ import { ContainerCardSets, ContainerSets } from "./SetsStyle"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import {Autoplay, Navigation } from 'swiper/modules';
+import { useEffect, useState } from "react"
 
 export default function Sets() {
+
+  const [ sliderPerView, setSliderPerView] = useState(3)
+
+  useEffect(() => {
+    function handleResize() {
+      window.innerWidth < 700
+      ? setSliderPerView(1)
+      : window.innerWidth < 1000 
+      ? setSliderPerView(2)
+      : window.innerWidth > 1001
+      ? setSliderPerView(3)
+      : setSliderPerView(1)
+    }
+    handleResize()
+
+    window.addEventListener("resize", handleResize)
+
+    return() => {
+      window.removeEventListener("resize", handleResize)
+    }
+  
+  },[])
+  
   const data = [
     { id: '1', img: '/combo-1.webp', title: 'Combo Ouro 18K Chanfrada 3mm + Anel Realeza', price: 'R$3.100,00', priceCard: '12xR$258,33' },
 
@@ -34,9 +58,9 @@ export default function Sets() {
       <ParagraphSecond textParagraph="Confira essa seleção de conjuntos onde você leva o par de alianças que sempre quis com anel de noivado, por um valor incrível!" />
       <ContainerCardSets>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          centeredSlides={true}
+          slidesPerView={sliderPerView}
+          spaceBetween={10}
+          centeredSlides={false}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,

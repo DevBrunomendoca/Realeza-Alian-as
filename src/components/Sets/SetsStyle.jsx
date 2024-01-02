@@ -11,6 +11,10 @@ padding: 5rem ;
 h2 {
   color: #928480;
   font-size: 5rem;
+  text-align: center;
+}
+@media (max-width:370px) {
+  padding: 2rem 1rem ;
 }
 ` 
 
@@ -19,5 +23,6 @@ export const ContainerCardSets = styled.div`
 display: flex;
 align-items: center;
 width: 80%;
-padding: 5rem 10rem;
+padding: 5rem 0;
+
 ` 

@@ -12,6 +12,15 @@ padding: 5rem ;
 h2 {
   color: #928480;
   font-size: 5rem;
+  text-align: center;
+}
+@media (max-width:600px) {
+  h2{
+    text-align: center;
+  }
+}
+@media (max-width:370px) {
+  padding: 3rem 1rem ;
 }
 `
 
@@ -20,5 +29,5 @@ export const ContainerCardThick = styled.div`
 display: flex;
 align-items: center;
 width: 80%;
-padding: 5rem 10rem;
+padding: 5rem 0;
 `

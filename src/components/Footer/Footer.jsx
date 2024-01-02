@@ -38,13 +38,14 @@ export default function Footer() {
       </ContentFooter>
 
       <Thancks>
-        <ParagraphSecond textParagraph="© Copyright | Developed By BRUNO MENDONÇA" />
         <Logo />
-        <div style={{ display: "flex", gap: "2rem", marginLeft:"15rem" }}>
+        
+        <div style={{ display: "flex", gap: "2rem", marginLeft:"10rem" }}>
           <img src="/icon-instagram.png" alt="" />
           <img src="/icon-facebook.png" alt="" />
           <img src="icon-whatsapp.png" alt="" />
         </div>
+        <ParagraphSecond textParagraph="© Copyright | Developed By BRUNO MENDONÇA" />
       </Thancks>
     </FooterStyleds>
   )

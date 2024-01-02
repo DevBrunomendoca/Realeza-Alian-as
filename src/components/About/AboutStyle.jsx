@@ -17,6 +17,18 @@ p{
   text-align: start;
   max-width: 450px;
 }
+
+@media (max-width:850px) {
+  flex-direction: column;
+
+  h2, p{ 
+    text-align: center;
+  }
+}
+@media (max-width:600px) {
+  width: 90%;
+margin: 3rem 5% 5rem;
+}
 `
 
 export const ContentAbout = styled.div`
@@ -26,6 +38,9 @@ justify-content: center;
 align-items: start;
 gap: 2rem;
 max-width: 500px;
+@media (max-width:850px) {
+  align-items: center;
+}
 `
 export const BannerAbout = styled.div`
 

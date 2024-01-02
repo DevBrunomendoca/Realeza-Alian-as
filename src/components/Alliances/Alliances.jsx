@@ -8,8 +8,29 @@ import { ContentCardsEngagement } from "../Engagement/EngagementStyle"
 import ImageCard from "./ImageCard"
 import Price from "./Price"
 import Button from "../Main/Button"
+import { useEffect, useState } from "react";
 
 export default function Alliances() {
+
+  const [slidePerview, setSlidePerView] = useState(3)
+
+  useEffect(() => {
+    function handleResize() {
+      window.innerWidth < 700
+      ? setSlidePerView(1)
+      : window.innerWidth < 1100
+      ? setSlidePerView(2)
+      : setSlidePerView(3)
+    }
+
+    handleResize()
+    window.addEventListener("resize", handleResize)
+
+    return() => {
+      window.removeEventListener("resize", handleResize)
+    }
+
+  }, [])
 
   const data = [
     {id:'5', img: '/par-de-alianca-5.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 3mm', price:'R$1.770,00', priceCard:'12xR$147,50'},
@@ -32,10 +53,10 @@ export default function Alliances() {
         <SecondTitle textTitle="Produtos em destaque" />
         <ContainerCard>
         <Swiper
-          slidesPerView={3}
-
+          slidesPerView={slidePerview}
+          
           spaceBetween={30}
-          centeredSlides={true}
+          centeredSlides={false}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
