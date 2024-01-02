@@ -34,14 +34,14 @@ align-items: center;
 width: 90%;
 padding: 5rem;
   gap: 1rem;
-  background-color: #FDEFEC;
+  background-color: #F8F2F0;//#F8F2F0 #FDEFEC #C3A59C #928480
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: -5rem 5%; 
   border-radius: 10px;
 
 
   h2{ 
-  color: #928480;
+  color: #F8F2F0;
   font-size: 3.5rem;
 }
 `

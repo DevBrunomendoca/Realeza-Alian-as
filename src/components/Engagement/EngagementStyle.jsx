@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 
 export const SectionEngagement = styled.section`
-margin: 5rem 0;
+//margin: 5rem 0;
+background-color: #F8F2F0;
+padding: 5rem 0;
 ` 
 
 export const ContainerContent = styled.div`
@@ -10,7 +12,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 `
-
 export const BannerEngagement = styled.div`
 margin-left: 10%;
 width: 90%;
@@ -52,8 +53,8 @@ transition: .5s;
 border: 2px solid #C3A59C;
 
 &:hover {
-  background-color: #F8F2F0;
-  border: 2px solid #F8F2F0;
+  background-color: #fff;
+  border: 2px solid #fff;
 }
 h2 {
   font-size: 1.5rem !important;

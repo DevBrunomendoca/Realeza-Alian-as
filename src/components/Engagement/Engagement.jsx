@@ -5,7 +5,7 @@ import { SectionEngagement, ContainerContent, BannerEngagement, ContentEngagemen
 import { Swiper, SwiperSlide } from "swiper/react"
 import {Autoplay, Navigation } from 'swiper/modules';
 
-import { ContainerCards } from "../Alliances/CardProductStyle";
+//import { ContainerCards } from "../Alliances/CardProductStyle";
 import Price from "../Alliances/Price";
 import Button from "../Main/Button";
 import ImageCard from "../Alliances/ImageCard";
