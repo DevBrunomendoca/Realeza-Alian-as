@@ -11,7 +11,7 @@ padding: 1rem 6rem;
 background-color: #fff;
 border-radius: 15px;
 position: absolute;
-z-index: 10000;
+z-index: 10;
 box-shadow: rgba(50, 50, 93, 0.2) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
 nav{
   display: flex;
@@ -32,10 +32,15 @@ color: #D0A38D;
 margin: 5rem 3%;
 }
 @media (max-width:850px ) {
-  justify-content: center;
+  //box-shadow: none;
+  //justify-content: center;
+  margin: 2rem 3%;
   nav {
     display: none;
   }
+}
+@media (max-width:600px ) {
+  padding:  1rem 2rem;
 }
 `
 

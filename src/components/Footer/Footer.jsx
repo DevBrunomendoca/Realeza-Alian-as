@@ -7,7 +7,7 @@ import Iformations from "./Informations"
 
 export default function Footer() {
   return (
-    <FooterStyleds>
+    <FooterStyleds id="contact">
       <ContentFooter>
         <div>
           <Title textTitle="INFORMAÇÕES" />

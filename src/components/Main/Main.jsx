@@ -92,7 +92,7 @@ export default function Main() {
             <Title id="title" textTitle="BEM-VINDO A REALEZA JOIAS" />
             <SecondTitle id="h2" textTitle="Alianças de alta qualidade que você sempre mereceu" />
             <Paragraph id="p" textParagraph="Descubra o brilho eterno das alianças de ouro. Aprecie a elegância e o requinte de peças cuidadosamente criadas para simbolizar o amor e a união." />
-            <Button id="btn" textButton="SABER MAIS!" />
+            <a href="#alliances"><Button id="btn" textButton="SABER MAIS!" /></a>
           </ContainerContent>
         </Container>
         {data.map((item) => (

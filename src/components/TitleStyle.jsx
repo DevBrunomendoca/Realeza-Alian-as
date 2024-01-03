@@ -6,5 +6,4 @@ text-align: start;
   font-family: 'Mulish', sans-serif;
   font-weight: 700;
   color: #C3A59C;
-
 `

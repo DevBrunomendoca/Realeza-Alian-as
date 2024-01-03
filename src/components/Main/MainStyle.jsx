@@ -51,7 +51,7 @@ h1 {
   font-size: 1.8rem;
   font-family: 'Mulish', sans-serif;
   font-weight: 700;
-  color: #C3A59C;
+  color: #D0A38D;
 }
 
 @media (max-width:850px) {
