@@ -40,16 +40,16 @@ export default function Footer() {
             <Button textButton="Enviar" />
           </InputControul>
         </div>
-        
+
       </ContentFooter>
 
       <Thancks>
         <Logo />
-        
-        <div style={{ display: "flex", gap: "2rem", marginLeft:"10rem" }}>
-          <img src="/icon-instagram.png" alt="" />
+
+        <div style={{ display: "flex", gap: "2rem", marginLeft: "10rem" }}>
+          <a href="https://wa.me/556293813147?text=Ol%C3%A1%20realeza%20joias%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank"><img src="/icon-whatsapp.png" alt="icone whatsapp" /></a>
+          <a href="https://www.instagram.com/realezajoiasgoiania?igsh=MWUzOG04MmE3dGgwOA==" target="_blank"><img src="/icon-instagram.png" alt="icone whatsapp" /></a>
           <img src="/icon-facebook.png" alt="" />
-          <img src="icon-whatsapp.png" alt="" />
         </div>
         <ParagraphSecond textParagraph="© Copyright | Developed By BRUNO MENDONÇA" />
       </Thancks>

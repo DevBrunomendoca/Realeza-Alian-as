@@ -52,4 +52,7 @@ gap: 2rem;
   display: none;
   
 }
+a {
+  cursor: pointer;
+}
 `

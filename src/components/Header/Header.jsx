@@ -23,9 +23,12 @@ export default function Header() {
         <Logo/>
       </div>
       <SocialMedias>
-        <img src="/icon-instagram.png" alt="" />
+        <a href="https://wa.me/556293813147?text=Ol%C3%A1%20realeza%20joias%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank"><img src="/icon-whatsapp.png" alt="icone whatsapp" /></a>
+
+        <a href="https://www.instagram.com/realezajoiasgoiania?igsh=MWUzOG04MmE3dGgwOA=="><img src="/icon-instagram.png" alt="icone whatsapp" target="_blank"/></a>
+        
         <img src="/icon-facebook.png" alt="" />
-        <img src="icon-whatsapp.png" alt="" />
+        
       </SocialMedias>
       <IconSideBar sideBar={sideBar} onClick={() => toggleSideBar()} />
       

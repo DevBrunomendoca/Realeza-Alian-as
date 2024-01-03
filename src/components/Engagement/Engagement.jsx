@@ -37,21 +37,21 @@ export default function Engagement() {
   }, [])
 
   const data = [
-    { id: '1', img: '/solitario-1.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.074,00', priceCard: '12xR$107,40' },
+    { id: '1', img: '/solitario-1.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.074,00', priceCard: '12xR$107,40', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Solit%C3%A1rio' },
 
-    { id: '2', img: '/solitario-2.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.286,00', priceCard: '12xR$107,16' },
+    { id: '2', img: '/solitario-2.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.286,00', priceCard: '12xR$107,16', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Solit%C3%A1rio' },
     
-    { id: '3', img: '/solitario-3.webp', title: 'Anel em Ouro 18K Princess', price: 'R$1.500,00', priceCard: '12xR$125,00' },
+    { id: '3', img: '/solitario-3.webp', title: 'Anel em Ouro 18K Princess', price: 'R$1.500,00', priceCard: '12xR$125,00', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Princess' },
 
-    { id: '4', img: '/solitario-4.webp', title: 'Anel em Ouro 18K Realeza', price: 'R$1.596,00', priceCard: '12xR$133,00' },
+    { id: '4', img: '/solitario-4.webp', title: 'Anel em Ouro 18K Realeza', price: 'R$1.596,00', priceCard: '12xR$133,00', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Realeza' },
 
-    { id: '5', img: '/solitario-5.webp', title: 'Anel em Ouro 18K Zurique', price: 'R$2.730,00', priceCard: '12xR$227,50' },
+    { id: '5', img: '/solitario-5.webp', title: 'Anel em Ouro 18K Zurique', price: 'R$2.730,00', priceCard: '12xR$227,50', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Zurique' },
 
-    { id: '6', img: '/solitario-1.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.074,00', priceCard: '12xR$107,40' },
+    { id: '6', img: '/solitario-1.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.074,00', priceCard: '12xR$107,40', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Solit%C3%A1rio' },
 
-    { id: '7', img: '/solitario-2.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.286,00', priceCard: '12xR$107,16' },
+    { id: '7', img: '/solitario-2.webp', title: 'Anel em Ouro 18K Solitário', price: 'R$1.286,00', priceCard: '12xR$107,16', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Solit%C3%A1rio' },
     
-    { id: '8', img: '/solitario-3.webp', title: 'Anel em Ouro 18K Princess', price: 'R$1.500,00', priceCard: '12xR$125,00' },
+    { id: '8', img: '/solitario-3.webp', title: 'Anel em Ouro 18K Princess', price: 'R$1.500,00', priceCard: '12xR$125,00', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Anel%20em%20Ouro%2018K%20Princess' },
   ]
 
   return (
@@ -90,7 +90,8 @@ export default function Engagement() {
                     <Price textPrice={item.price} />
                     <Price textPrice={item.priceCard} />
                   </div>
-                  <Button textButton="COMPRAR" />
+                  <a href={item.linkBtn} target="_blank"><Button textButton="COMPRAR" /></a>
+                  
                 </div>
               </ContentCardsEngagement>
             </SwiperSlide>

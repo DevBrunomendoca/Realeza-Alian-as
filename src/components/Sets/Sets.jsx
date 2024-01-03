@@ -17,11 +17,11 @@ export default function Sets() {
 
   useEffect(() => {
     function handleResize() {
-      window.innerWidth < 500
+      window.innerWidth <= 500
       ? setSliderPerView(1)
-      : window.innerWidth < 800 
+      : window.innerWidth <= 800 
       ? setSliderPerView(2)
-      : window.innerWidth > 801
+      : window.innerWidth >= 801
       ? setSliderPerView(3)
       : setSliderPerView(1)
       
@@ -37,19 +37,19 @@ export default function Sets() {
   },[])
   
   const data = [
-    { id: '1', img: '/combo-1.webp', title: 'Combo Ouro 18K Chanfrada 3mm + Anel Realeza', price: 'R$3.100,00', priceCard: '12xR$258,33' },
+    { id: '1', img: '/combo-1.webp', title: 'Combo Ouro 18K Chanfrada 3mm + Anel Realeza', price: 'R$3.100,00', priceCard: '12xR$258,33', linkBtn: 'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Combo%20Ouro%2018K%20Chanfrada%203mm%20%2B%20Anel%20Realeza' },
 
-    { id: '2', img: '/combo-2.webp', title: 'Combo Ouro 18K Reta com friso 4mm + Anel Princess', price: 'R$3.830,00', priceCard: '12xR$319,16' },
+    { id: '2', img: '/combo-2.webp', title: 'Combo Ouro 18K Reta com friso 4mm + Anel Princess', price: 'R$3.830,00', priceCard: '12xR$319,16', linkBtn: 'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Combo%20Ouro%2018K%20Reta%20com%20friso%204mm%20%2B%20Anel%20Princess' },
 
-    { id: '3', img: '/combo-3.webp', title: 'Combo Ouro 18K Reta com friso 3mm + Anel Imperatrice', price: 'R$2.665,00', priceCard: '12xR$222,08' },
+    { id: '3', img: '/combo-3.webp', title: 'Combo Ouro 18K Reta com friso 3mm + Anel Imperatrice', price: 'R$2.665,00', priceCard: '12xR$222,08', linkBtn: 'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Combo%20Ouro%2018K%20Reta%20com%20friso%203mm%20%2B%20Anel%20Imperatrice' },
 
-    { id: '4', img: '/combo-4.webp', title: 'Combo Ouro 18K Reta com friso 4mm + Anel Realeza', price: 'R$3.690,00', priceCard: '12xR$307,50' },
+    { id: '4', img: '/combo-4.webp', title: 'Combo Ouro 18K Reta com friso 4mm + Anel Realeza', price: 'R$3.690,00', priceCard: '12xR$307,50', linkBtn: 'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Combo%20Ouro%2018K%20Reta%20com%20friso%204mm%20%2B%20Anel%20Realeza' },
 
-    { id: '5', img: '/combo-5.webp', title: 'Combo Ouro 18K Abaulada 7mm + Anel Realeza', price: 'R$6.860,00', priceCard: '12xR$571,66' },
+    { id: '5', img: '/combo-5.webp', title: 'Combo Ouro 18K Abaulada 7mm + Anel Realeza', price: 'R$6.860,00', priceCard: '12xR$571,66', linkBtn: 'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Combo%20Ouro%2018K%20Abaulada%207mm%20%2B%20Anel%20Realeza' },
 
-    { id: '6', img: '/combo-6.webp', title: 'Combo Ouro 18K Reta com friso 5mm + Anel Zurique', price: 'R$5.815,00', priceCard: '12xR$484,58' },
+    { id: '6', img: '/combo-6.webp', title: 'Combo Ouro 18K Reta com friso 5mm + Anel Zurique', price: 'R$5.815,00', priceCard: '12xR$484,58', linkBtn: 'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Combo%20Ouro%2018K%20Reta%20com%20friso%205mm%20%2B%20Anel%20Zurique' },
     
-    { id: '7', img: '/combo-7.webp', title: 'Combo Ouro 18K Chanfrado 7mm + Anel Realeza', price: 'R$R$7.230,00', priceCard: '12xR$602,50' }
+    { id: '7', img: '/combo-7.webp', title: 'Combo Ouro 18K Chanfrado 7mm + Anel Realeza', price: 'R$R$7.230,00', priceCard: '12xR$602,50', linkBtn: 'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Combo%20Ouro%2018K%20Chanfrado%207mm%20%2B%20Anel%20Realeza' }
   ]
 
   return (
@@ -63,7 +63,7 @@ export default function Sets() {
           spaceBetween={10}
           centeredSlides={false}
           autoplay={{
-            delay: 4000,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           loop={true}
@@ -81,7 +81,7 @@ export default function Sets() {
                   <Price textPrice={item.price} />
                   <Price textPrice={item.priceCard} />
                 </div>
-                <Button textButton="COMPRAR" />
+                <a href={item.linkBtn} target="_blank"> <Button textButton="COMPRAR" /></a>
               </div>
             </ContainerCards>
             </SwiperSlide>

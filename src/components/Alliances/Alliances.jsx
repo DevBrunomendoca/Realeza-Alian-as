@@ -33,13 +33,19 @@ export default function Alliances() {
   }, [])
 
   const data = [
-    {id:'5', img: '/par-de-alianca-5.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 3mm', price:'R$1.770,00', priceCard:'12xR$147,50'},
-    {id:'1', img: '/par-de-alianca-1.webp', title:'Par de Alianças em Ouro 18K Tradicional - 4mm', price:'R$2.360,00', priceCard:'12xR$196,66'},
-    {id:'2', img: '/par-de-alianca-2.webp', title:'Par de Alianças em Ouro 18K Chanfrada - 4mm', price:'R$2.360,00', priceCard:'12xR$196,66'},
-    {id:'3', img: '/par-de-alianca-3.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 4mm', price:'R$2.360,00', priceCard:'12xR$296,66'},
-    {id:'4', img: '/par-de-alianca-4.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 4mm', price:'R$2.580,00', priceCard:'12xR$215,00'},
-    {id:'6', img: '/par-de-alianca-6.webp', title:'Par de Alianças em Ouro 18K Abaulada c/ friso - 5mm', price:'R$3.760,00', priceCard:'12xR$313,33'},
-    {id:'7', img: '/par-de-alianca-5.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 3mm', price:'R$1.770,00', priceCard:'12xR$147,50'}
+    {id:'5', img: '/par-de-alianca-5.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 3mm', price:'R$1.770,00', priceCard:'12xR$147,50', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Par%20de%20Alian%C3%A7as%20em%20Ouro%2018K%20Reta%20c%2F%20Friso%20-%203mm'},
+
+    {id:'1', img: '/par-de-alianca-1.webp', title:'Par de Alianças em Ouro 18K Tradicional - 4mm', price:'R$2.360,00', priceCard:'12xR$196,66', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Par%20de%20Alian%C3%A7as%20em%20Ouro%2018K%20Tradicional%20-%204mm'},
+
+    {id:'2', img: '/par-de-alianca-2.webp', title:'Par de Alianças em Ouro 18K Chanfrada - 4mm', price:'R$2.360,00', priceCard:'12xR$196,66', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Par%20de%20Alian%C3%A7as%20em%20Ouro%2018K%20Chanfrada%20-%204mm'},
+
+    {id:'3', img: '/par-de-alianca-3.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 4mm', price:'R$2.360,00', priceCard:'12xR$296,66', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Par%20de%20Alian%C3%A7as%20em%20Ouro%2018K%20Reta%20c%2F%20Friso%20-%204mm'},
+
+    {id:'4', img: '/par-de-alianca-4.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 4mm', price:'R$2.580,00', priceCard:'12xR$215,00', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Par%20de%20Alian%C3%A7as%20em%20Ouro%2018K%20Reta%20c%2F%20Friso%20-%204mm'},
+
+    {id:'6', img: '/par-de-alianca-6.webp', title:'Par de Alianças em Ouro 18K Abaulada c/ friso - 5mm', price:'R$3.760,00', priceCard:'12xR$313,33', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Par%20de%20Alian%C3%A7as%20em%20Ouro%2018K%20Abaulada%20c%2F%20friso%20-%205mm'},
+
+    {id:'7', img: '/par-de-alianca-5.webp', title:'Par de Alianças em Ouro 18K Reta c/ Friso - 3mm', price:'R$1.770,00', priceCard:'12xR$147,50', linkBtn:'https://wa.me/556293813147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20produto%20Par%20de%20Alian%C3%A7as%20em%20Ouro%2018K%20Reta%20c%2F%20Friso%20-%203mm'}
     
   ]
 
@@ -58,7 +64,7 @@ export default function Alliances() {
           spaceBetween={30}
           centeredSlides={false}
           autoplay={{
-            delay: 4000,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           loop={true}
@@ -76,7 +82,8 @@ export default function Alliances() {
                     <Price textPrice={item.price} />
                     <Price textPrice={item.priceCard} />
                   </div>
-                  <Button textButton="COMPRAR" />
+                  <a href={item.linkBtn} target="_blank"><Button textButton="COMPRAR" /></a>
+                  
                 </div>
               </ContentCardsEngagement>
             </SwiperSlide>
