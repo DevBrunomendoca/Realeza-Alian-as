@@ -27,7 +27,7 @@ export default function Header() {
 
         <a href="https://www.instagram.com/realezajoiasgoiania?igsh=MWUzOG04MmE3dGgwOA=="><img src="/icon-instagram.png" alt="icone whatsapp" target="_blank"/></a>
         
-        <img src="/icon-facebook.png" alt="" />
+        <a href="#"><img src="/icon-facebook.png" alt="logo facebok" /></a>
         
       </SocialMedias>
       <IconSideBar sideBar={sideBar} onClick={() => toggleSideBar()} />

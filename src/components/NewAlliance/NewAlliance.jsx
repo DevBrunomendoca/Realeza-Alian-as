@@ -30,8 +30,8 @@ brincos, colares, pulseiras e peças personalizadas."/>
         </ContainerCards>
       </ContentNewAlliance>
       <BannerNewAlliance>
-        <img style={{ position: "relative", top: "-10rem" }} src="/ouro-antigo1.jpeg" alt="" />
-        <img style={{ position: "relative", top: "10rem", left: "-2rem" }} src="/ouro-novo1.jpeg" alt="" />
+        <img style={{ position: "relative", top: "-10rem" }} src="/ouro-antigo1.jpeg" alt="banner de uma antiga alinça" />
+        <img style={{ position: "relative", top: "10rem", left: "-2rem" }} src="/ouro-novo1.jpeg" alt="banner de uma nova alinça" />
       </BannerNewAlliance>
     </SectionNewAlliance>
   )

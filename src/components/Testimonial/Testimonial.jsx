@@ -75,7 +75,7 @@ export default function Testimonial() {
             <SwiperSlide key={item.id}>
               <CardTestimonialStyle>
                 <div>
-                  <img style={{ width: "100px", borderRadius: "50%" }} src={item.img} alt="" />
+                  <img style={{ width: "100px", borderRadius: "50%" }} src={item.img} alt="foto de perfil" />
                   <h2>{item.name}</h2>
                 </div>
                 <Paragraph

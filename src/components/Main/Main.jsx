@@ -98,7 +98,7 @@ export default function Main() {
         {data.map((item) => (
           <SwiperSlide key={item.id}>
             <ContainerBanner>
-              <img src={item.image} alt="banner" />
+              <img src={item.image} alt="banner principal" />
             </ContainerBanner>
           </SwiperSlide>
         ))}
