@@ -17,13 +17,14 @@ export default function Sets() {
 
   useEffect(() => {
     function handleResize() {
-      window.innerWidth < 700
+      window.innerWidth < 500
       ? setSliderPerView(1)
-      : window.innerWidth < 1000 
+      : window.innerWidth < 800 
       ? setSliderPerView(2)
-      : window.innerWidth > 1001
+      : window.innerWidth > 801
       ? setSliderPerView(3)
       : setSliderPerView(1)
+      
     }
     handleResize()
 
@@ -62,7 +63,7 @@ export default function Sets() {
           spaceBetween={10}
           centeredSlides={false}
           autoplay={{
-            delay: 2500,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           loop={true}

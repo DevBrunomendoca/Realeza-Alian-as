@@ -54,8 +54,10 @@ align-items: center;
 width: 100%;
 padding: 5rem 10rem;
 @media (max-width: 600px) {
-  padding: 5rem 2rem;
+  padding: 5rem .5rem;
 }
+
+
 `
 
 export const ContentCardsEngagement = styled.div`
@@ -98,5 +100,8 @@ button {
   font-size: 1.8rem;
   width: 130px;
 }
+}
+@media (max-width: 430px) {
+  span {font-size:1.5rem ;}
 }
 `

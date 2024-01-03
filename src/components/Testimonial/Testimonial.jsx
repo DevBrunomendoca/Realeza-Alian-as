@@ -61,7 +61,7 @@ export default function Testimonial() {
           spaceBetween={30}
           centeredSlides={false}
           autoplay={{
-            delay: 4000,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           loop={true}

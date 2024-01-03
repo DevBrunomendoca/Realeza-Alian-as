@@ -29,6 +29,16 @@ body {
 font-size: 2.5rem !important;
 font-weight: 600;
 }
+}
+@media (max-width: 430px) {
 
+  .swiper-button-prev, .swiper-button-next{
+    position: absolute;
+    top: 50%;
+    right: 0 ;
+  }
+  .swiper-button-prev {
+    left: 0 ;
+  }
 }
 `

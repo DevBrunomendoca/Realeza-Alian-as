@@ -25,4 +25,7 @@ align-items: center;
 width: 80%;
 padding: 5rem 0;
 
+@media (max-width:1250px) {
+  width: 100%;
+}
 ` 

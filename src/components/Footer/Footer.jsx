@@ -22,6 +22,11 @@ export default function Footer() {
             description="Realezajoiasgoiania24k@gmail.com"
           />
           <Iformations
+            img="/icon-insta.png"
+            alt="icone instagram"
+            description="@realezajoiasgoiania"
+          />
+          <Iformations
             img="/icon-tel.png"
             alt="icone telefone"
             description="62 993813147"
@@ -35,6 +40,7 @@ export default function Footer() {
             <Button textButton="Enviar" />
           </InputControul>
         </div>
+        
       </ContentFooter>
 
       <Thancks>

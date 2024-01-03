@@ -26,7 +26,7 @@ p {
   margin-top: 1.5rem;
 }
 @media (max-width:850px) {
-  padding: 0rem 5rem;
+  padding: 5rem 1rem;
   h2{
     text-align: center;
   }
@@ -54,6 +54,9 @@ margin-top: -10rem;
 
 @media (max-width:1250px) {
   padding: 2rem 5rem;
+}
+@media (max-width:500px) {
+  padding: 5rem 2rem;
 }
 `
 export const CardTestimonialStyle = styled.div`

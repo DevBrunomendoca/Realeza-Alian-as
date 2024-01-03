@@ -11,9 +11,6 @@ width: 100%;
 margin: 5rem 0;
 @media (max-width:1250px) {
   flex-direction: column;
-  h2 {
-    font-size: 4rem !important;
-  }
 }
 `
 export const ContentNewAlliance = styled.div`

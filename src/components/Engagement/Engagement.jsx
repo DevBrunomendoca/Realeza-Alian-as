@@ -16,9 +16,9 @@ export default function Engagement() {
 
   useEffect(() => {
     function handleResize() {
-      window.innerWidth <= 450
-      ? setSlidePerView(1)
-      : window.innerWidth <= 799
+      // window.innerWidth <= 450
+      // ? setSlidePerView(1)
+       window.innerWidth <= 799
       ? setSlidePerView(2)
       : window.innerWidth <= 999
       ? setSlidePerView(3)
@@ -72,7 +72,7 @@ export default function Engagement() {
           spaceBetween={10}
           centeredSlides={false}
           autoplay={{
-            delay: 4000,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           loop={true}

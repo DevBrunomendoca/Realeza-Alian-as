@@ -17,11 +17,11 @@ export default function AllianceThick() {
 
   useEffect(() => {
     function handleResize( ) {
-      window.innerWidth <= 700
+      window.innerWidth <= 500
       ? setSliderPerview(1)
-      : window.innerWidth <= 1000
+      : window.innerWidth <= 800
       ? setSliderPerview(2)
-      : window.innerWidth >= 1001
+      : window.innerWidth >= 801
       ? setSliderPerview(3)
       : setSliderPerview(1)
     }
@@ -66,7 +66,7 @@ export default function AllianceThick() {
           spaceBetween={30}
           centeredSlides={false}
           autoplay={{
-            delay: 2500,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           loop={true}
